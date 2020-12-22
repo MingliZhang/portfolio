@@ -3,6 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "-": "0.0.1",
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "browser-sync": "^2.26.13",
+    "bulma": "^0.9.1",
+    "encodeurl": "^1.0.2",
+    "express": "^4.17.1",
+    "formats": "^1.0.0",
+    "heroku": "^7.47.2",
+    "jquery": "^3.5.1",
+    "moment": "^2.29.1",
+    "socket.io": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
