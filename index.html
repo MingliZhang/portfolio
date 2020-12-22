@@ -14,6 +14,8 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./default.css" />
+
+    <link id="theme-style" rel="stylesheet" type="text/css" href="" />
     <script
       src="https://kit.fontawesome.com/d9c6d2612b.js"
       crossorigin="anonymous"
@@ -35,22 +37,20 @@
             </div>
 
             <ul id="navigation">
-              <li><a href="#">Link</a></li>
-
-              <li><a href="#">Link</a></li>
+              <li><a href="#contact-info">Contact</a></li>
             </ul>
           </div>
 
           <div class="left-column">
-            <img id="profile_pic" src="./images/img-01.jpg" />
+            <img id="profile_pic" src="./images/Profile-pic.jpg" />
             <h5 style="text-align: center; line-height: 0">
               Personalize Theme
             </h5>
             <div id="theme-options-wrapper">
-              <div class="theme-dot" id="light-mode"></div>
-              <div class="theme-dot" id="blue-mode"></div>
-              <div class="theme-dot" id="green-mode"></div>
-              <div class="theme-dot" id="purple-mode"></div>
+              <div data-mode="light" class="theme-dot" id="light-mode"></div>
+              <div data-mode="blue" class="theme-dot" id="blue-mode"></div>
+              <div data-mode="green" class="theme-dot" id="green-mode"></div>
+              <div data-mode="purple" class="theme-dot" id="purple-mode"></div>
             </div>
 
             <p id="settings-note">
@@ -65,10 +65,8 @@
                 <div id="corner-tr" class="corner"></div>
                 <h3>Professional summary</h3>
                 <p>
-                  I am a Junior student at UNC-Chapel Hill majoring in Computer
-                  Science and Mathematics. I am a dynamic and creative
-                  programmer seeking an internship to provide my skills to
-                  software development.
+                  I am a Junior student at UNC-Chapel Hill majoring in computer
+                  science and mathematics.
                 </p>
                 <div id="corner-br" class="corner"></div>
                 <div id="corner-bl" class="corner"></div>
@@ -154,7 +152,7 @@
           </div>
         </div>
         <hr />
-        <div class="contact-info">
+        <div class="contact-info" id="contact-info">
           <h4>Contact Information</h4>
           <div class="infoes">
             <ul>
@@ -190,7 +188,7 @@
                   class="fa-icon"
                 >
                   <span id="linkedin-icon">
-                    <i class="fab fa-linkedin"></i><span> @Mingli Zhang</span>
+                    <i class="fab fa-linkedin"> @Mingli Zhang</i>
                   </span>
                 </a>
               </li>
@@ -201,8 +199,7 @@
                   class="fa-icon"
                 >
                   <span id="facebook-icon">
-                    <i class="fab fa-facebook-square"></i
-                    ><span> @Mike Zhang</span>
+                    <i class="fab fa-facebook-square"> @Mike Zhang</i>
                   </span>
                 </a>
               </li>
@@ -213,59 +210,98 @@
                   class="fa-icon"
                 >
                   <span id="instagram-icon">
-                    <i class="fab fa-instagram"></i> <span> @Mingli Zhang</span>
+                    <i class="fab fa-instagram"> @Mingli Zhang</i>
                   </span>
                 </a>
               </li>
             </ul>
           </div>
-
-          <!-- <div class="icons">
-            <div>
-              <a
-                target="blank"
-                href="https://www.linkedin.com/in/mingli-zhang/"
-                class="fa-icon"
-              >
-                <span id="linkedin-icon">
-                  <i class="fab fa-linkedin"></i>
-                </span>
-                <span> @Mingli Zhang</span>
-              </a>
-            </div>
-            <div>
-              <a
-                target="blank"
-                href="https://www.facebook.com/mike.zhang.792303/"
-                class="fa-icon"
-              >
-                <span id="facebook-icon">
-                  <i class="fab fa-facebook-square"></i>
-                </span>
-              </a>
-            </div>
-            <div>
-              <a
-                target="blank"
-                href="https://www.instagram.com/mingli_zhang/"
-                class="fa-icon"
-              >
-                <span id="instagram-icon">
-                  <i class="fab fa-instagram"></i>
-                </span>
-              </a>
-            </div>
-          </div> -->
         </div>
       </div>
     </section>
 
     <section class="s1">
-      <div class="main-container">Portfolio</div>
+      <div class="main-container">
+        <h3 style="text-align: center">My major projects</h3>
+        <div class="post-wrapper">
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="./images/miaomiao-chat.png" />
+              <div class="post-preview">
+                <h6 class="post-title">MiaoMiao social web app</h6>
+                <p class="post-intro">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  hendrerit nisi sed sollicitudin pellentesque. Nunc posuere
+                  purus rhoncus pulvinar aliquam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="" />
+              <div class="post-preview">
+                <h6 class="post-title">Post Title</h6>
+                <p class="post-intro">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  hendrerit nisi sed sollicitudin pellentesque. Nunc posuere
+                  purus rhoncus pulvinar aliquam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="" />
+              <div class="post-preview">
+                <h6 class="post-title">How to get away from Covid 19</h6>
+                <p class="post-intro">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  hendrerit nisi sed sollicitudin pellentesque. Nunc posuere
+                  purus rhoncus pulvinar aliquam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="" />
+              <div class="post-preview">
+                <h6 class="post-title">Sushi Game</h6>
+                <p class="post-intro">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  hendrerit nisi sed sollicitudin pellentesque. Nunc posuere
+                  purus rhoncus pulvinar aliquam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="s2">
-      <div class="main-container">Contact</div>
-    </section>
+    <!-- <section class="s2">
+      <div class="main-container">
+        <h3 style="text-align: center">Get In Touch</h3>
+
+        <form id="contact-form">
+          <label>Name</label>
+          <input class="input-field" type="text" name="name" />
+
+          <label>Subject</label>
+          <input class="input-field" type="text" name="subject" />
+
+          <label>Email</label>
+          <input class="input-field" type="text" name="email" />
+
+          <label>Message</label>
+          <textarea class="input-field" name="message"></textarea>
+
+          <input id="submit-btn" type="submit" value="Send" />
+        </form>
+      </div>
+    </section> -->
+
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
