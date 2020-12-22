@@ -1,10 +1,3 @@
-const express = require("express");
-const app = express();
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log("Working on port " + PORT);
-});
-
 let theme = localStorage.getItem("MingliZhang'sTheme");
 
 if (theme == null) {
