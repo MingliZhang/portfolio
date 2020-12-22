@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   
-  "main": "index.js",
+  "main": "script.js",
   "dependencies": {
     "browser-sync": "^2.26.13",
     "heroku": "^7.47.6"
