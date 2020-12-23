@@ -1,42 +1,48 @@
-#instro{
-    background-color: aqua;
+body * {
+  transition: 0.1s;
 }
-#description{
-    background-color: lightblue;
+#game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-#gameBoard{
-    display: grid;
-    grid-gap:15px;
-    grid-template-columns: 50px 50px 50px 50px;
-    padding:15px;
-    background-color: burlywood;
-    width : 250px;
+#instro {
+  background-color: aqua;
 }
-
-
-
-.box{
-    background-color: goldenrod ;
-    text-align: center;
-    padding: 20px;
+#description {
+  background-color: lightblue;
 }
 
-.empty{
-    background-color:palegoldenrod ;
-    text-align: center;
-    padding: 20px;
-    padding-top: 40px;
+#gameBoard {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 50px 50px 50px 50px;
+  padding: 15px;
+  background-color: burlywood;
+  width: 250px;
 }
 
-#win{
-    background-color: green;
-    font-size: large;
-    font-weight: bold;
+.box {
+  background-color: goldenrod;
+  text-align: center;
+  padding: 20px;
 }
 
-#lose{
-    background-color: red;
-    font-size: large;
-    font-weight: bold;
+.empty {
+  background-color: palegoldenrod;
+  text-align: center;
+  padding: 20px;
+  padding-top: 40px;
+}
+
+#win {
+  background-color: green;
+  font-size: large;
+  font-weight: bold;
+}
+
+#lose {
+  background-color: red;
+  font-size: large;
+  font-weight: bold;
 }
