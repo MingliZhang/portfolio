@@ -2,13 +2,11 @@ body * {
   transition: 0.3s;
 }
 
-form {
-  left: 50%;
-  padding-top: 20px;
-}
-
 #Score {
   text-align: center;
+  padding-bottom: 20px;
+  font-size: larger;
+  font-weight: bold;
 }
 
 #instro {
@@ -17,6 +15,14 @@ form {
 #description {
   max-width: 400px;
   margin: 0 auto;
+  text-align: left;
+  font-size: large;
+}
+
+#button {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #description-wrapper {
