@@ -1,20 +1,12 @@
 body * {
   transition: 0.1s;
 }
-#game {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 #instruction-wrapper {
   max-width: 400px;
   border: 1px gainsboro;
-}
-
-#instro {
-}
-#description {
+  text-align: center;
+  color: navy;
 }
 
 #gameBoard {
