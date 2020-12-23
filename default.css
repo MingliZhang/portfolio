@@ -6,7 +6,7 @@
 
   --buttonColor: #000000;
 
-  --mainText: black;
+  --mainText: black !important;
   --secondaryText: #4b5156;
 
   --themeDotBorder: #24292e;
@@ -374,7 +374,7 @@ lh {
 }
 
 .post-title {
-  color: black;
+  color: black !important;
   margin: 0;
 }
 
