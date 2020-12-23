@@ -2,11 +2,24 @@ body * {
   transition: 0.3s;
 }
 
+form {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+#Score {
+  margin: 0 auto;
+}
+
 #instro {
   font-style: italic;
 }
 #description {
   max-width: 400px;
+}
+
+#description-wrapper {
+  margin: 0 auto;
 }
 
 #gameBoard {
@@ -17,6 +30,7 @@ body * {
   background-color: burlywood;
   width: 250px;
   margin: 0 auto;
+  font-weight: bold;
 }
 
 .box {
