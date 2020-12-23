@@ -3,12 +3,12 @@ body * {
 }
 
 form {
-  margin: 0 auto;
+  left: 50%;
   padding-top: 20px;
 }
 
 #Score {
-  margin: 0 auto;
+  text-align: center;
 }
 
 #instro {
@@ -19,7 +19,7 @@ form {
 }
 
 #description-wrapper {
-  margin: 0 auto;
+  text-align: center;
 }
 
 #gameBoard {
