@@ -1,16 +1,21 @@
 body * {
   transition: 0.1s;
+  background-color: wheat;
 }
 #game {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
+#instruction-wrapper {
+  max-width: 400px;
+  border: 1px gainsboro;
+}
+
 #instro {
-  background-color: aqua;
 }
 #description {
-  background-color: lightblue;
 }
 
 #gameBoard {
