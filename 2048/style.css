@@ -1,8 +1,7 @@
 #instro {
-  background-color: aqua;
+  font-style: italic;
 }
 #description {
-  background-color: lightblue;
   max-width: 400px;
 }
 
@@ -13,6 +12,8 @@
   padding: 15px;
   background-color: burlywood;
   width: 250px;
+  justify-content: center;
+  align-content: center;
 }
 
 .box {
