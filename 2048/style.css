@@ -1,6 +1,5 @@
 body * {
   transition: 0.1s;
-  background-color: wheat;
 }
 #game {
   display: flex;
