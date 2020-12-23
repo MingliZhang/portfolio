@@ -3,7 +3,7 @@ import Game from "./game.js";
 $(function () {
   let game = new Game(4);
   const $root = $("#root");
-  let restart = `<div id = "button"><input type="button" id="restart">Restart</input></div>`;
+  let restart = `<div id = "button"><input type="button" id="restart" value = "Restart"/></div>`;
   let score = `<div id = "Score" > <span>Score: ${game.gameState.score}<span></div>`;
   let gameArea = `<div id = "gameBoard" >`;
   for (let i = 0; i < game.sizeSqr; i++) {
@@ -24,7 +24,7 @@ $(function () {
     event.preventDefault();
     event.stopPropagation();
     game.setupNewGame();
-    let restart = `<div id = "button"><input type="button" id="restart">Restart</input></div>`;
+    let restart = `<div id = "button"><input type="button" id="restart" value = "Restart"/></div>`;
     let score = `<div id = "Score" > <span>Score: ${game.gameState.score}<span></div>`;
     let gameArea = `<div id = "gameBoard" >`;
     for (let i = 0; i < game.sizeSqr; i++) {
@@ -53,7 +53,7 @@ $(function () {
     } else if (press.keyCode == 40) {
       game.move("down");
     }
-    let restart = `<div id = "button"><input type="button" id="restart">Restart</input></div>`;
+    let restart = `<div id = "button"><input type="button" id="restart" value = "Restart"/></div>`;
     let score = `<div id = "Score" > <span>Score: ${game.gameState.score}<span></div>`;
     let gameArea = `<div id = "gameBoard" >`;
     for (let i = 0; i < game.sizeSqr; i++) {
