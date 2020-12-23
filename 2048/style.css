@@ -1,12 +1,8 @@
-body * {
-  transition: 0.1s;
+#instro {
+  background-color: aqua;
 }
-
-#instruction-wrapper {
-  max-width: 400px;
-  border: 1px gainsboro;
-  text-align: center;
-  color: navy;
+#description {
+  background-color: lightblue;
 }
 
 #gameBoard {
