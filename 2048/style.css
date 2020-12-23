@@ -16,7 +16,7 @@ form {
 }
 #description {
   max-width: 400px;
-  text-align: center;
+  margin: 0 auto;
 }
 
 #description-wrapper {
@@ -51,10 +51,12 @@ form {
   background-color: green;
   font-size: large;
   font-weight: bold;
+  text-align: center;
 }
 
 #lose {
   background-color: red;
   font-size: large;
   font-weight: bold;
+  text-align: center;
 }
