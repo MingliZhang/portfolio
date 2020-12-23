@@ -16,7 +16,7 @@ body * {
   padding: 15px;
   background-color: burlywood;
   width: 250px;
-  justify-content: center;
+  margin: 0 auto;
 }
 
 .box {
