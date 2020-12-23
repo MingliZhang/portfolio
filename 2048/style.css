@@ -3,6 +3,7 @@
 }
 #description {
   background-color: lightblue;
+  max-width: 400px;
 }
 
 #gameBoard {
