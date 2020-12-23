@@ -1,3 +1,7 @@
+body * {
+  transition: 0.3s;
+}
+
 #instro {
   font-style: italic;
 }
@@ -13,7 +17,6 @@
   background-color: burlywood;
   width: 250px;
   justify-content: center;
-  align-content: center;
 }
 
 .box {
