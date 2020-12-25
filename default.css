@@ -314,34 +314,43 @@ lh {
   text-align: left;
 }
 
-#linkedin-icon {
-  color: var(--iconColor);
-  font-size: 1.1em;
-}
 .contact-info > ul {
   text-align: left;
 }
+
+#linkedin-icon {
+  transition: 0s;
+  color: var(--iconColor);
+  font-size: 1.1em;
+}
+
 #facebook-icon {
+  transition: 0s;
   color: var(--iconColor);
   font-size: 1.1em;
 }
 
 #instagram-icon {
+  transition: 0s;
   color: var(--iconColor);
   font-size: 1.1em;
 }
 
 #linkedin-icon:hover {
+  transition: 0s;
+  transition: 0s;
   color: var(--iconHoverColor);
   font-size: 1.1em;
 }
 
 #facebook-icon:hover {
+  transition: 0s;
   color: var(--iconHoverColor);
   font-size: 1.1em;
 }
 
 #instagram-icon:hover {
+  transition: 0s;
   color: var(--iconHoverColor);
   font-size: 1.1em;
 }
