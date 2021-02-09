@@ -323,6 +323,11 @@ lh {
   color: var(--iconColor);
   font-size: 1.1em;
 }
+#github-icon {
+  transition: 0s;
+  color: var(--iconColor);
+  font-size: 1.1em;
+}
 
 #facebook-icon {
   transition: 0s;
@@ -337,6 +342,12 @@ lh {
 }
 
 #linkedin-icon:hover {
+  transition: 0s;
+  transition: 0s;
+  color: var(--iconHoverColor);
+  font-size: 1.1em;
+}
+#github-icon:hover {
   transition: 0s;
   transition: 0s;
   color: var(--iconHoverColor);
