@@ -373,25 +373,25 @@ lh {
 }
 
 .experience-preview{
-  padding: 0px;
+  padding: 0px !important;
 }
 
 .experience-title{
-  margin: 0;
+  margin: 0 !important;
 }
 
 .experience-info{
-  margin: 0;
-  margin-left: 20px;
-  font-style: italic;
+  margin: 0 !important;
+  margin-left: 20px !important;
+  font-style: italic !important;
 }
 
 .experience-slash{
-  font-style:normal;
+  font-style:normal !important;
 }
 
 .experience-detail{
-  list-style-type:circle;
+  list-style-type:circle !important;
 }
 
 .post-wrapper {
