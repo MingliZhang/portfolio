@@ -366,6 +366,33 @@ lh {
   font-size: 1.1em;
 }
 
+.experience-wrapper {
+  display: block;
+  gap: 20px;
+  justify-content: center;
+}
+
+.experience-preview{
+  padding: 0px;
+}
+
+.experience-title{
+  margin: 0;
+}
+
+.experience-info{
+  margin: 0;
+  margin-left: 20px;
+  font-style: italic;
+}
+
+.experience-slash{
+  font-style:normal;
+}
+.experience-detail{
+  list-style-type:circle;
+}
+
 .post-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, 320px);
