@@ -370,21 +370,21 @@ lh {
   display: block;
 }
 
-.experience-title{
+.experience-title {
   margin: 0;
 }
 
-.experience-info{
+.experience-info {
   margin: 0;
   margin-left: 20px;
   font-style: italic;
 }
 
-.experience-slash{
+.experience-slash {
   font-style:normal;
 }
 
-.experience-detail{
+.experience-detail {
   list-style-type:circle;
 }
 
