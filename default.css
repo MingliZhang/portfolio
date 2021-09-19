@@ -318,6 +318,11 @@ lh {
   text-align: left;
 }
 
+#email-icon {
+  transition: 0s;
+  color: var(--iconColor);
+  font-size: 1.1em;
+}
 #linkedin-icon {
   transition: 0s;
   color: var(--iconColor);
@@ -340,7 +345,12 @@ lh {
   color: var(--iconColor);
   font-size: 1.1em;
 }
-
+#email-icon:hover {
+  transition: 0s;
+  transition: 0s;
+  color: var(--iconHoverColor);
+  font-size: 1.1em;
+}
 #linkedin-icon:hover {
   transition: 0s;
   transition: 0s;
