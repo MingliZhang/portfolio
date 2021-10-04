@@ -393,6 +393,10 @@ lh {
     color: var(--iconHoverColor);
     font-size: 1.1em;
 }
+.resume-wrapper{
+  text-align:center;
+  width:100%;
+}
 
 .experience-wrapper {
     display: block;
