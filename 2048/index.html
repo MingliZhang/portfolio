@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>2048</title>
+		<title>2048</title>
 
-    <!-- Include links to CSS stylesheets below -->
-    <!-- TODO (optional): Add link to bulma here -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
+		<!-- Include links to CSS stylesheets below -->
+		<!-- TODO (optional): Add link to bulma here -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
 
-  <body style="background-color: wheat">
-    <div id="root" style="padding-top: 5px; justify-content: center"></div>
-    <div id="description-wrapper">
-      <h1 id="instro">Instructions:</h1>
-      <p id="description">
-        At the start of the game, two tiles will be generated automatically. If
-        two tiles with the same number collide with each other, they will merge
-        into one tile and the number will double. Your goal is to use your arrow
-        keys (If you do not know where they are, they are beneath the enter key)
-        to slide all tiles to one side and make them collide and form 2048. You
-        win if 2048 is formed, you lose if there are no more movements possible.
-        Try it and you will understand how this works really quick.
-      </p>
-    </div>
+	<body style="background-color: wheat">
+		<div id="root" style="padding-top: 5px; justify-content: center"></div>
+		<div id="description-wrapper">
+			<h1 id="instro">Instructions:</h1>
+			<p id="description">
+				At the start of the game, two tiles will be generated automatically. If
+				two tiles with the same number collide with each other, they will merge
+				into one tile and the number will double. Your goal is to use your arrow
+				keys (If you do not know where they are, they are beneath the enter key)
+				to slide all tiles to one side and make them collide and form 2048. You
+				win if 2048 is formed, you lose if there are no more movements possible.
+				Try it and you will understand how this works really quick.
+			</p>
+		</div>
 
-    <!-- Include links to JavaScript files below -->
-    <!-- TODO: Add link to jQuery here -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
-        "></script>
-    <script src="engine/view.js" type="module"></script>
-  </body>
+		<!-- Include links to JavaScript files below -->
+		<!-- TODO: Add link to jQuery here -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="engine/view.js" type="module"></script>
+	</body>
 </html>

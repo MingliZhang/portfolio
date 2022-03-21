@@ -13,12 +13,36 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
 			rel="stylesheet" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./default.css?v<?php echo time(); ?>" />
+		<link rel="stylesheet" href="/styles/default.css?v<?php echo time(); ?>" />
 		<link id="theme-style" rel="stylesheet" type="text/css" href="" />
 		<script
 			src="https://kit.fontawesome.com/d9c6d2612b.js"
 			crossorigin="anonymous"></script>
 		<link rel="icon" href="data:" />
+		<script type="module">
+			// Import the functions you need from the SDKs you need
+			import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js';
+			import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.6.9/firebase-analytics.js';
+			// TODO: Add SDKs for Firebase products that you want to use
+			// https://firebase.google.com/docs/web/setup#available-libraries
+
+			// Your web app's Firebase configuration
+			// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+			const firebaseConfig = {
+				apiKey: 'AIzaSyB05mlBu0_zFGq2WVlCZJT11FX0g-3uczk',
+				authDomain: 'portfolio-a6fab.firebaseapp.com',
+				databaseURL: 'https://portfolio-a6fab-default-rtdb.firebaseio.com',
+				projectId: 'portfolio-a6fab',
+				storageBucket: 'portfolio-a6fab.appspot.com',
+				messagingSenderId: '230907708278',
+				appId: '1:230907708278:web:6dc81647eb0a48e9f1b057',
+				measurementId: 'G-RTRJEJQ5P4',
+			};
+
+			// Initialize Firebase
+			const app = initializeApp(firebaseConfig);
+			const analytics = getAnalytics(app);
+		</script>
 	</head>
 
 	<body>
@@ -38,7 +62,11 @@
 
 						<ul id="navigation">
 							<li><a href="#contact-info">Contact</a></li>
-							<li><a href="#resume">Resume</a></li>
+							<li>
+								<a href="https://minglizhang.com/documents/Resume.pdf"
+									>Resume</a
+								>
+							</li>
 							<li><a href="#experience">Experience</a></li>
 							<li><a href="#posts">Projects</a></li>
 						</ul>
@@ -230,13 +258,17 @@
 		<section class="s1">
 			<div class="main-container" id="resume">
 				<h3 style="text-align: center">
-					Resume [<a target="blank" href="documents/Resume.pdf">Download</a>]
+					Resume [<a
+						target="blank"
+						href="https://minglizhang.com/documents/Resume.pdf"
+						>Download</a
+					>]
 				</h3>
 				<div class="resume-wrapper">
 					<iframe
 						height="800px"
 						width="80%"
-						src="./documents/Resume.pdf"></iframe>
+						src="https://minglizhang.com/documents/Resume.pdf"></iframe>
 				</div>
 			</div>
 		</section>
@@ -410,7 +442,11 @@
 									Kaggle.
 								</p>
 								<p>
-									<a target="blank" href="documents/report.pdf">Report</a>
+									<a
+										target="blank"
+										href="https://minglizhang.com/documents/Report.pdf"
+										>Report</a
+									>
 									<a
 										target="blank"
 										href="https://github.com/MingliZhang/COMP-562-Final-Project"
@@ -467,26 +503,7 @@
 				</div>
 			</div>
 		</section>
-
-		<section class="s2">
-			<div class="main-container">
-				<h3 style="text-align: center">Get In Touch</h3>
-				<form id="contact-form">
-					<label for="name">Name</label>
-					<input class="input-field" type="text" name="name" id="name" />
-					<label for="subject">Subject</label>
-					<input class="input-field" type="text" name="subject" id="subject" />
-					<label for="email">Email</label>
-					<input class="input-field" type="text" name="email" id="email" />
-					<label for="message">Message</label>
-					<textarea class="input-field" name="message" id="message"></textarea>
-					<div id="respond"></div>
-					<input id="submit-btn" type="submit" value="Send" />
-				</form>
-			</div>
-		</section>
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-		<script type="text/javascript" src="theme.js"></script>
-		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="/theme.js"></script>
 	</body>
 </html>
