@@ -1,3 +1,10 @@
+import {
+	getFirestore,
+	collection,
+	addDoc,
+} from 'https://www.gstatic.com/firebasejs/9.6.9/firebase-firestore.js';
+
+const db = getFirestore();
 const nameElement = document.getElementById('name');
 const subjectElement = document.getElementById('subject');
 const emailElement = document.getElementById('email');
@@ -36,18 +43,15 @@ formElement.addEventListener('submit', async (e) => {
 		return;
 	}
 	try {
-		const result = await axios({
-			method: 'post',
-			url: '/api/message',
-			data: {
-				name: name,
-				email: email,
-				message: message,
-				subject: subject,
-			},
+		const docRef = await addDoc(collection(db, 'messages'), {
+			name: name,
+			email: email,
+			message: message,
+			subject: subject,
 		});
+		console.log('Document written with ID: ', docRef.id);
 		formElement.reset();
-	} catch (error) {
+	} catch (e) {
 		respond.innerHTML = `<p>An Error has occured, please contact me through email directly.</p>`;
 	}
 });
