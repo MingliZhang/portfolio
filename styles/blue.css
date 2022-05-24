@@ -1,19 +1,19 @@
 :root {
-  --mainColor: #15202b;
-  --secondaryColor: #192734;
+    --mainColor: #15202b;
+    --secondaryColor: #192734;
 
-  --borderColor: #164d56;
+    --borderColor: #164d56;
 
-  --mainText: white;
-  --secondaryText: #eeeeee;
+    --mainText: white;
+    --secondaryText: #eeeeee;
 
-  --themeDotBorder: white;
+    --themeDotBorder: white;
 
-  --iconColor: #eeeeee;
-  --iconHoverColor: #17a2b8;
+    --iconColor: #eeeeee;
+    --iconHoverColor: #17a2b8;
 
-  --previewBg: rgb(25, 39, 52, 0.8);
-  --previewShadow: #111921;
+    --previewBg: rgb(25, 39, 52, 0.8);
+    --previewShadow: #111921;
 
-  --buttonColor: #17a2b8;
+    --buttonColor: #17a2b8;
 }

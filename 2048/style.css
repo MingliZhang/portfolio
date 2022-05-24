@@ -1,68 +1,68 @@
 body * {
-  transition: 0.3s;
+    transition: 0.3s;
 }
 
 #Score {
-  text-align: center;
-  padding-bottom: 20px;
-  font-size: larger;
-  font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: larger;
+    font-weight: bold;
 }
 
 #instro {
-  font-style: italic;
+    font-style: italic;
 }
 #description {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: left;
-  font-size: large;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: large;
 }
 
 #button {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #description-wrapper {
-  text-align: center;
+    text-align: center;
 }
 
 #gameBoard {
-  display: grid;
-  grid-gap: 15px;
-  grid-template-columns: 50px 50px 50px 50px;
-  padding: 15px;
-  background-color: burlywood;
-  width: 250px;
-  margin: 0 auto;
-  font-weight: bold;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 50px 50px 50px 50px;
+    padding: 15px;
+    background-color: burlywood;
+    width: 250px;
+    margin: 0 auto;
+    font-weight: bold;
 }
 
 .box {
-  background-color: goldenrod;
-  text-align: center;
-  padding: 20px;
+    background-color: goldenrod;
+    text-align: center;
+    padding: 20px;
 }
 
 .empty {
-  background-color: palegoldenrod;
-  text-align: center;
-  padding: 20px;
-  padding-top: 40px;
+    background-color: palegoldenrod;
+    text-align: center;
+    padding: 20px;
+    padding-top: 40px;
 }
 
 #win {
-  background-color: green;
-  font-size: large;
-  font-weight: bold;
-  text-align: center;
+    background-color: green;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
 }
 
 #lose {
-  background-color: red;
-  font-size: large;
-  font-weight: bold;
-  text-align: center;
+    background-color: red;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
 }

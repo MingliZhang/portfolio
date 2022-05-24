@@ -10,7 +10,7 @@ export default class Game {
             score: 0,
             won: false,
             over: false,
-        }
+        };
         this.moveArr = [];
         this.winArr = [];
         this.loseArr = [];
@@ -55,10 +55,14 @@ export default class Game {
         let board = this.gameState.board;
         let moved = false;
         switch (direction) {
-            case "up":
+            case 'up':
                 for (let i = 0; i < this.size; i++) {
                     let column = [];
-                    for (let index = i; index < board.length; index += this.size) {
+                    for (
+                        let index = i;
+                        index < board.length;
+                        index += this.size
+                    ) {
                         column.push(board[index]);
                     }
                     let [after, scored, did] = this.calArray(column);
@@ -66,16 +70,24 @@ export default class Game {
                     if (did) {
                         moved = true;
                     }
-                    for (let index = i; index < board.length; index += this.size) {
+                    for (
+                        let index = i;
+                        index < board.length;
+                        index += this.size
+                    ) {
                         board[index] = after[0];
                         after.shift();
                     }
                 }
                 break;
-            case "down":
+            case 'down':
                 for (let i = 0; i < this.size; i++) {
                     let column = [];
-                    for (let index = i; index < board.length; index += this.size) {
+                    for (
+                        let index = i;
+                        index < board.length;
+                        index += this.size
+                    ) {
                         column.push(board[index]);
                     }
                     column.reverse();
@@ -85,13 +97,17 @@ export default class Game {
                         moved = true;
                     }
                     after.reverse();
-                    for (let index = i; index < board.length; index += this.size) {
+                    for (
+                        let index = i;
+                        index < board.length;
+                        index += this.size
+                    ) {
                         board[index] = after[0];
                         after.shift();
                     }
                 }
                 break;
-            case "left":
+            case 'left':
                 for (let i = 0; i < this.sizeSqr; i += this.size) {
                     let row = [];
                     for (let index = i; index < this.size + i; index++) {
@@ -108,7 +124,7 @@ export default class Game {
                     }
                 }
                 break;
-            case "right":
+            case 'right':
                 for (let i = 0; i < this.sizeSqr; i += this.size) {
                     let row = [];
                     for (let index = i; index < this.size + i; index++) {
@@ -128,8 +144,9 @@ export default class Game {
                 }
                 break;
             default:
-                console.log("This line should not have run at all! If you see this line, there is somehting wrong with the move function in game.js");
-
+                console.log(
+                    'This line should not have run at all! If you see this line, there is somehting wrong with the move function in game.js'
+                );
         }
         if (moved) {
             this.addingTiles();
@@ -141,9 +158,9 @@ export default class Game {
             }
             if (max === 2048) {
                 this.gameState.won = true;
-                this.winArr.forEach(element => element(this.getGameState()));
+                this.winArr.forEach((element) => element(this.getGameState()));
             }
-            this.moveArr.forEach(element => element(this.getGameState()));
+            this.moveArr.forEach((element) => element(this.getGameState()));
 
             let rowtest = false;
             let coltest = false;
@@ -167,12 +184,15 @@ export default class Game {
                     coltest = true;
                 }
             }
-            if (rowtest === false && coltest === false && !this.gameState.board.includes(0)) {
+            if (
+                rowtest === false &&
+                coltest === false &&
+                !this.gameState.board.includes(0)
+            ) {
                 this.gameState.over = true;
-                this.loseArr.forEach(element => element(this.getGameState()));
+                this.loseArr.forEach((element) => element(this.getGameState()));
             }
         }
-
 
         // console.log("after moving "+ direction + ": \n");
         // let tostring = this.toString();
@@ -216,16 +236,17 @@ export default class Game {
     }
 
     toString() {
-        let string = "";
+        let string = '';
         for (let i = 0; i < this.size; i++) {
             for (let j = 0; j < this.size; j++) {
                 if (this.gameState.board[i * this.size + j] == 0) {
-                    string += "[] "
+                    string += '[] ';
                 } else {
-                    string += "[" + this.gameState.board[i * this.size + j] + "]";
+                    string +=
+                        '[' + this.gameState.board[i * this.size + j] + ']';
                 }
             }
-            string += "\n";
+            string += '\n';
         }
         return string;
     }
@@ -245,4 +266,3 @@ export default class Game {
         return { ...this.gameState };
     }
 }
-
