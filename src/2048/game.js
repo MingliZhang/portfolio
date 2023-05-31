@@ -144,8 +144,8 @@ export default class Game {
                 }
                 break;
             default:
-                console.log(
-                    'This line should not have run at all! If you see this line, there is somehting wrong with the move function in game.js'
+                console.error(
+                    'This line should not have run at all! If you see this line, there is something wrong with game logic.'
                 );
         }
         if (moved) {
@@ -193,13 +193,6 @@ export default class Game {
                 this.loseArr.forEach((element) => element(this.getGameState()));
             }
         }
-
-        // console.log("after moving "+ direction + ": \n");
-        // let tostring = this.toString();
-        // console.log(tostring);
-        // console.log("Score: " + this.gameState.score);
-        // console.log("Won: " + this.gameState.won);
-        // console.log("Over: " + this.gameState.over);
     }
 
     calArray(arr) {
@@ -216,19 +209,12 @@ export default class Game {
                         scoreAdded += arr[i];
                         swapped = true;
                         processed[i] = true;
-                        break;
-                        // console.log("This is the swap case, currently i is " + i + " j is, " + j + "arr[i] is " + arr[i] + "arr[j] is " + arr[j]);
-                    } else {
-                        // console.log("This is the not zero but not equal case, should have broke. The next i should be i + 1 and next j should be i + 1, currently i is " + i + " j is, " + j + "arr[i] is " + arr[i] + "arr[j] is " + arr[j]);
-                        break;
                     }
+                    break;
                 } else if (arr[i] == 0 && arr[j] != 0) {
-                    // console.log("This is the case where there is current arr[i] is zero, currently i is " + i + " j is, " + j + "arr[i] is " + arr[i] + "arr[j] is " + arr[j]);
                     arr[i] = arr[j];
                     arr[j] = 0;
                     swapped = true;
-                } else {
-                    // console.log("This is the else case, currently i is " + i + " j is, " + j + "arr[i] is " + arr[i] + "arr[j] is " + arr[j]);
                 }
             }
         }

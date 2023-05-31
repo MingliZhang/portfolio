@@ -3,16 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
         <title>2048</title>
-
-        <!-- Include links to CSS stylesheets below -->
-        <!-- TODO (optional): Add link to bulma here -->
-        <link rel="stylesheet" href="./style.css" />
     </head>
 
     <body style="background-color: wheat">
-        <div id="root" style="padding-top: 5px; justify-content: center"></div>
+        <div style="padding-top: 5px; justify-content: center">
+            <div id="button">
+                <input type="button" id="restart" value="Restart" />
+            </div>
+            <div id="gameContainer"></div>
+        </div>
         <div id="description-wrapper">
             <h1 id="instro">Instructions:</h1>
             <p id="description">
@@ -27,10 +27,5 @@
                 quick.
             </p>
         </div>
-
-        <!-- Include links to JavaScript files below -->
-        <!-- TODO: Add link to jQuery here -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="engine/view.js" type="module"></script>
     </body>
 </html>

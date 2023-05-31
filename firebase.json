@@ -1,6 +1,7 @@
 {
     "hosting": {
-        "public": ".",
+        "public": "public",
+        "site": "minglizhang-first",
         "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
     }
 }

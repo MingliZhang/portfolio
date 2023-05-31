@@ -1,27 +1,15 @@
-import {
-    getFirestore,
-    collection,
-    addDoc,
-} from 'https://www.gstatic.com/firebasejs/9.6.9/firebase-firestore.js';
+import { db } from './firebase';
 
-const db = getFirestore();
+import { invalidateEmail } from './util';
+
+import './theme.js';
+
 const nameElement = document.getElementById('name');
 const subjectElement = document.getElementById('subject');
 const emailElement = document.getElementById('email');
 const messageElement = document.getElementById('message');
 const respond = document.getElementById('respond');
 const formElement = document.getElementById('contact-form');
-
-const mailformat =
-    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-function InvalidateEmail(mail) {
-    if (mail.match(mailformat)) {
-        return false;
-    } else {
-        return true;
-    }
-}
 
 formElement.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -30,7 +18,7 @@ formElement.addEventListener('submit', async (e) => {
     const subject = subjectElement.value;
     const email = emailElement.value;
     const message = messageElement.value;
-    if (InvalidateEmail(email)) {
+    if (invalidateEmail(email)) {
         respond.innerHTML = `<p>Please provide a valid email address!</p>`;
         return;
     } else if (
