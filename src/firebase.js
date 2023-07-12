@@ -3,14 +3,13 @@ import { getFirestore, connectFirestoreEmulator } from 'firebase/firestore';
 const { getStorage, connectStorageEmulator } = require('firebase/storage');
 
 const firebaseConfig = {
-    apiKey: 'AIzaSyB05mlBu0_zFGq2WVlCZJT11FX0g-3uczk',
-    authDomain: 'portfolio-a6fab.firebaseapp.com',
-    databaseURL: 'https://portfolio-a6fab-default-rtdb.firebaseio.com',
-    projectId: 'portfolio-a6fab',
-    storageBucket: 'portfolio-a6fab.appspot.com',
-    messagingSenderId: '230907708278',
-    appId: '1:230907708278:web:6dc81647eb0a48e9f1b057',
-    measurementId: 'G-RTRJEJQ5P4',
+    apiKey: 'AIzaSyDj1fRq4PkW8ES3-0kkHRm6yslX1zBkEGA',
+    authDomain: 'portfolio-7d0c2.firebaseapp.com',
+    projectId: 'portfolio-7d0c2',
+    storageBucket: 'portfolio-7d0c2.appspot.com',
+    messagingSenderId: '87138659755',
+    appId: '1:87138659755:web:85f2e482e28cc4779776ee',
+    measurementId: 'G-JK3CDJ5R6X',
 };
 const firebaseApp = initializeApp(firebaseConfig);
 
