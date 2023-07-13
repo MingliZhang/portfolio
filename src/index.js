@@ -1,8 +1,11 @@
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js';
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js';
+
 import {
+    addDoc,
+    collection,
     getFirestore,
     connectFirestoreEmulator,
-} from 'https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js';
+} from 'https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js';
 
 const firebaseConfig = {
     apiKey: 'AIzaSyDj1fRq4PkW8ES3-0kkHRm6yslX1zBkEGA',
@@ -33,6 +36,10 @@ function invalidateEmail(mail) {
     } else {
         return true;
     }
+}
+
+function sleep(s) {
+    return new Promise((resolve) => setTimeout(resolve, s * 1000));
 }
 
 if (theme == null) {
@@ -106,8 +113,12 @@ formElement.addEventListener('submit', async (e) => {
                 ${message}`,
             },
         });
+        respond.innerHTML = '<p>Sent!</p>';
         formElement.reset();
+        await sleep(10);
+        respond.innerHTML = '';
     } catch (e) {
+        console.log(e);
         respond.innerHTML = `<p>An Error has occured, please contact me through email directly.</p>`;
     }
 });

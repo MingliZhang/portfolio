@@ -1,6 +1,0 @@
-const mailformat =
-   ;
-
-
-
-export { invalidateEmail };
