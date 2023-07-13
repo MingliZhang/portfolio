@@ -92,13 +92,20 @@ formElement.addEventListener('submit', async (e) => {
         return;
     }
     try {
-        const docRef = await addDoc(collection(db, 'messages'), {
+        const docRef = await addDoc(collection(db, 'mail'), {
             name: name,
-            email: email,
             message: message,
-            subject: subject,
+            to: 'zml2416154671@gmail.com',
+            from: email,
+            replyTo: email,
+            cc: email,
+            message: {
+                subject: subject,
+                html: `<h1>${subject}</h1>
+                <h3>${name} left the following message from Mingli Zhang's personal website</h3> 
+                ${message}`,
+            },
         });
-        console.log('Document written with ID: ', docRef.id);
         formElement.reset();
     } catch (e) {
         respond.innerHTML = `<p>An Error has occured, please contact me through email directly.</p>`;
