@@ -118,7 +118,6 @@ formElement.addEventListener('submit', async (e) => {
         await sleep(10);
         respond.innerHTML = '';
     } catch (e) {
-        console.log(e);
         respond.innerHTML = `<p>An Error has occured, please contact me through email directly.</p>`;
     }
 });
