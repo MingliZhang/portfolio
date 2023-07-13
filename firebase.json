@@ -16,12 +16,9 @@
         }
     ],
     "hosting": {
-        "public": "public",
+        "public": "src",
         "site": "minglizhang-first",
         "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
-    },
-    "storage": {
-        "rules": "storage.rules"
     },
     "emulators": {
         "functions": {
@@ -33,9 +30,7 @@
         "hosting": {
             "port": 5002
         },
-        "storage": {
-            "port": 9199
-        },
+
         "ui": {
             "enabled": true
         },

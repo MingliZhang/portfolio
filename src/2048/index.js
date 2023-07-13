@@ -1,6 +1,6 @@
 import Game from './game.js';
 
-import './index.css';
+// import './index.css';
 
 let game = new Game(4);
 const gameContainer = document.querySelector('#gameContainer');

@@ -17,12 +17,9 @@ const db = getFirestore(firebaseApp);
 
 const storage = getStorage(firebaseApp);
 
-if (
-    process.env.ENV_TYPE === 'development' ||
-    process.env.ENV_TYPE === 'testing'
-) {
+if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
     connectFirestoreEmulator(db, 'localhost', 8080);
     connectStorageEmulator(storage, 'localhost', 9199);
 }
 
-export { firebaseApp, db };
+export default { firebaseApp, db };

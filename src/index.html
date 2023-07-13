@@ -3,30 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <title>Mingli Zhang</title>
-        <!-- <link
-            rel="icon"
-            href="https://img.icons8.com/ios-glyphs/90/000000/home-page--v1.png" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
-            rel="stylesheet" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
-            rel="stylesheet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            property="og:image"
-            content="https://www.minglizhang.com/_next/image?url=%2F/images%2Fold-portfolio.jpg&w=3840&q=75" />
-        <meta
-            property="og:description"
-            content="My old porfolio page built using HTML, CSS, and Javascript only. This site is no longer updated." />
-        <link
-            rel="stylesheet"
-            href="./styles/default.css?v<?php echo time(); ?>" />
+        <link rel="stylesheet" type="text/css" href="./styles/default.css" />
         <link id="theme-style" rel="stylesheet" type="text/css" href="" />
-        <script
-            src="https://kit.fontawesome.com/d9c6d2612b.js"
-            crossorigin="anonymous"></script>
-        <link rel="icon" href="data:" /> -->
     </head>
 
     <body>
@@ -59,8 +37,9 @@
 
                     <div class="left-column">
                         <img
-                        src=<%=require("./assets/images/Profile-pic.jpg").default%>
-                        alt="Profile Picture Coming Soon"/>
+                            id="profile_pic"
+                            src="./assets/images/Profile-pic.jpg"
+                            alt="Profile Picture Coming Soon" />
                         <h5 style="text-align: center; line-height: 0">
                             Personalize Theme
                         </h5>
@@ -426,14 +405,11 @@
                 <div class="post-wrapper">
                     <div>
                         <div class="post">
-                            <!-- <img
+                            <img
                                 class="thumbnail"
                                 src="./assets/images/miaomiao-chat.png"
                                 alt="Miao
-                            Miao Social Web App" /> -->
-                            <!-- <img
-                            src=<%=require("./assets/images/miaomiao-chat.png").default%>
-                            alt="Miao Miao Social Web App"/> -->
+                            Miao Social Web App" />
                             <div class="post-preview">
                                 <h6 class="post-title">
                                     MiaoMiao social web app
@@ -468,13 +444,11 @@
                     </div>
                     <div>
                         <div class="post">
-                            <!-- <img
+                            <img
                                 class="thumbnail"
                                 src="./assets/images/Machine Learning.png"
-                                alt="Final Research Paper for Machine Learning" /> -->
-                            <!-- <img src=<%=require("./assets/images/Machine
-                            Learning.png").default%> alt="Final Research Paper
-                            for Machine Learning"/> -->
+                                alt="Final Research Paper for Machine Learning" />
+
                             <div class="post-preview">
                                 <h6 class="post-title">
                                     Fake or real news detection
@@ -504,16 +478,10 @@
                     </div>
                     <div>
                         <div class="post">
-                            <!-- <img src=<%=require("./assets/images/How to get away
-                            from COVID 19.png").default%> alt="Hackathon project
-                            about COVID 19"/> -->
-                            <!-- <img
+                            <img
                                 class="thumbnail"
                                 src="./assets/images/How to get away from COVID 19.png"
-                                alt="Hackathon project about COVID 19" /> -->
-                            src=<%=require("./assets/images/Machine
-                            Learning.png").default%> alt="Final Research Paper
-                            for Machine Learning"/>
+                                alt="Hackathon project about COVID 19" />
                             <div class="post-preview">
                                 <h6 class="post-title">
                                     How to get away from Covid 19
@@ -536,13 +504,10 @@
                     </div>
                     <div>
                         <div class="post">
-                            <!-- <img
+                            <img
                                 class="thumbnail"
                                 src="./assets/images/2048.png"
-                                alt="Low resolution version of 2048" /> -->
-                            <!-- <img
-                            src=<%=require("./assets/images/2048.png").default%>
-                            alt="Low resolution version of 2048"/> -->
+                                alt="Low resolution version of 2048" />
                             <div class="post-preview">
                                 <h6 class="post-title">2048</h6>
                                 <p class="post-intro">
@@ -599,4 +564,5 @@
             </div>
         </section>
     </body>
+    <script type="module" src="./index.js"></script>
 </html>
